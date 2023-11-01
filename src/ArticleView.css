@@ -1,0 +1,13 @@
+
+
+.article-view {
+  border: 2px solid black;
+  margin: 2em;
+  padding: 2em;
+  background-color: rgb(200, 200, 200);
+}
+
+.view-img {
+  width: 80vw;
+  max-width: 20em;
+}
