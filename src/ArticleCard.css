@@ -1,14 +1,16 @@
 .article-card {
   box-sizing: border-box;
   border: 3px solid black;
-  padding: 10px;
   width: 30vw;
-  /* height: 30vw; */
+  padding: 1vw;
+  min-width: 10em;
 }
 
 .list-img {
   width: 25vw;
   height: 25vw;
+  min-width: 9em;
+  min-height: 9em;
 }
 
 .small-font {
