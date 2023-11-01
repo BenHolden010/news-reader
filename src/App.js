@@ -15,18 +15,16 @@ function App() {
   const [article, setArticle] = useState({})
   let navigate = useNavigate()
   function getNews(newQuery){
-    setArticles(mockData.articles)
+    // setArticles(mockData.articles)
 
-    // fetchQuery(newQuery)
-    // .then(data=>{
-    //   if(data.status==='ok'){
-    //     setArticles(data.articles)
-    //     console.log("ok!!!")
-    //   } else {
-    //     navigate('/error')
-    //     console.log("not ok :(")
-    //   }
-    // })
+    fetchQuery(newQuery)
+    .then(data=>{
+      if(data.status==='ok'){
+        setArticles(data.articles)
+      } else {
+        navigate('/error')
+      }
+    })
   }
   
 
