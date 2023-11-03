@@ -8,7 +8,6 @@ export default function Articles({articles, setArticle}){
     return(<ArticleCard 
       article={article} 
       key={i}
-      id={i}
       setArticle={setArticle}
       />)
   })

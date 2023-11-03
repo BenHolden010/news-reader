@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
+import Articles from "./Articles";
 
-export default function Form({query, setQuery, getNews}){
+export default function Form({query, setQuery, getNews, articles, setArticle}){
 return (
   <div>
     <input
@@ -11,7 +12,10 @@ return (
       onChange={event => setQuery(event.target.value)}
     />
     
-    <NavLink to={query}><button onClick = { () => getNews(query)}>SUBMIT</button></NavLink>
+    <button onClick = { () => getNews(query)}>Search News Articles</button>
+    {!articles.length?
+      <p>Nothing matched your search criteria, please try again.</p>
+      :<Articles articles={articles} setArticle={setArticle}/>}
     </div>
 )
 }

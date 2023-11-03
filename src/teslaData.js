@@ -1,4 +1,4 @@
-export let mockData = {
+export var teslaData = {
   "status": "ok",
   "totalResults": 11228,
   "articles": [
