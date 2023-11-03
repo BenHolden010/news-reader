@@ -9,7 +9,7 @@ return (
     <div className='pub-auth small-font'>
       <p>Published by: {article.author} on {article.publishedAt}</p>
     </div>
-    <img className='view-img' src={article.urlToImage || noImageAvailable}/>
+    <img className='view-img' src={article.urlToImage || noImageAvailable} alt={article.title}/>
     <p>{article.content}</p>
     <a href={article.url}><p>Click Here to View More...</p></a>
     <p>Source: {source || "unknown"}</p>
